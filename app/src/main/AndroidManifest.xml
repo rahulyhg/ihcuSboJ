@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pivotalsoft.com.JobSuchi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDnNejC3YSXPCC0zJfo1UnQwEUgymX2fCo" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TestDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".NewsListActivity" />
+        <activity android:name=".NewsDetailsActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".OtpVerificationActivity" />
+        <activity android:name=".CollegesActivity" />
+        <activity android:name=".UpdateProfileActivity" />
+        <activity android:name=".CollegeDetailsActivity" />
+        <activity android:name=".MyTestsActivity"></activity>
+        <activity android:name=".PreviousScoreActivity"></activity>
+    </application>
+
+</manifest>

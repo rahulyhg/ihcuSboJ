@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:layout_marginTop="3dp"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtTestName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/txttotalscore"
+            android:layout_toStartOf="@+id/txttotalscore"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtTime"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="TextView"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txttotalscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtTestName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="TextView"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txtobtainedscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtTestName"
+            android:text="TextView"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtobtainedscore"
+            android:layout_alignStart="@+id/txtobtainedscore"
+            android:layout_below="@+id/txtobtainedscore"
+            android:text="TextView"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txtRemarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtPercentage"
+            android:text="TextView"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RANK"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txtRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="pivotalsoft.com.JobSuchi.NewsDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtNewsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="dfbhfgnfbnfnbfbnkfbnkbnknb"
+            android:textColor="#f8212121"
+            android:layout_marginTop="5dp"/>
+
+
+        <ImageView
+            android:id="@+id/newsImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/job_suchi"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/txtNewsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dfbhfgnfbnfnbfbnkfbnkbnknb"
+            android:textColor="#020202"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/white"
+    android:id="@+id/parentLayout">
+
+
+    <TextView
+        android:id="@+id/txtCollegeCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="ASNW"
+        android:textColor="@android:color/black"
+        android:padding="5dp"/>
+
+    <!--<TextView
+        android:id="@+id/txtNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtCollegeCode"
+        android:layout_alignBottom="@+id/txtCollegeCode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:text="1"
+        android:textColor="@android:color/black" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/txtCollegeCode"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/txtCollegeCode">
+
+
+        <TextView
+            android:id="@+id/txtCollegeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="A S N WOMENS ENGINEERING COLLEGE" />
+
+        <TextView
+            android:id="@+id/txtCollegeAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Nelapadu Burripalem Road ,Tenali , 522201, Guntur District." />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pivotalsoft.com.JobSuchi.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true" />
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.11"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#283593"
+                app:cardElevation="2dp"
+                tools:ignore="NestedWeights">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:id="@+id/coursesLayout"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/course"
+                        android:padding="5dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Courses"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.11"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#00695C"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:id="@+id/batchsLayout"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/batch"
+                        android:padding="5dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Study Centers"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.11"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#ffffff"
+                app:cardElevation="2dp"
+                tools:ignore="NestedWeights">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:id="@+id/askLayout"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ask_expert"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/ask_an_expert"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.11"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#ffffff"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:id="@+id/studyLayout"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/study_live"
+                        android:padding="5dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/study_live"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.11"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#ffffff"
+                app:cardElevation="2dp"
+                tools:ignore="NestedWeights">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:id="@+id/qrCodeLayout"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_news"
+                        android:padding="5dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/scan_qr_code"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.11"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#ffffff"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:id="@+id/offerLayout"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_job_search"
+                        android:padding="5dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/offers"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
